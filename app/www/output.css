@@ -562,6 +562,10 @@ video {
   display: inline-flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -596,6 +600,20 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .whitespace-nowrap {
@@ -671,6 +689,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-current {
@@ -775,6 +797,14 @@ video {
 
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
+}
+
+.peer:disabled ~ .peer-disabled\:cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.peer:disabled ~ .peer-disabled\:opacity-70 {
+  opacity: 0.7;
 }
 
 .data-\[state\=checked\]\:bg-slate-900[data-state=checked] {

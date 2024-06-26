@@ -70,6 +70,46 @@ Button.displayName = "Button";
 
 /***/ }),
 
+/***/ "./components/ui/checkbox.jsx":
+/*!************************************!*\
+  !*** ./components/ui/checkbox.jsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Checkbox: () => (/* binding */ Checkbox)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _radix_ui_react_checkbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @radix-ui/react-checkbox */ "./node_modules/@radix-ui/react-checkbox/dist/index.mjs");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/check.js");
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/lib/utils */ "./lib/utils.js");
+var _excluded = ["className"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], t.indexOf(o) >= 0 || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.indexOf(n) >= 0) continue; t[n] = r[n]; } return t; }
+
+
+
+
+var Checkbox = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function (_ref, ref) {
+  var className = _ref.className,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_radix_ui_react_checkbox__WEBPACK_IMPORTED_MODULE_2__.Root, _extends({
+    ref: ref,
+    className: (0,_lib_utils__WEBPACK_IMPORTED_MODULE_1__.cn)("peer h-4 w-4 shrink-0 rounded-sm border border-slate-200 border-slate-900 ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-slate-900 data-[state=checked]:text-slate-50 dark:border-slate-800 dark:border-slate-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300 dark:data-[state=checked]:bg-slate-50 dark:data-[state=checked]:text-slate-900", className)
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_radix_ui_react_checkbox__WEBPACK_IMPORTED_MODULE_2__.Indicator, {
+    className: (0,_lib_utils__WEBPACK_IMPORTED_MODULE_1__.cn)("flex items-center justify-center text-current")
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "h-4 w-4"
+  })));
+});
+Checkbox.displayName = _radix_ui_react_checkbox__WEBPACK_IMPORTED_MODULE_2__.Root.displayName;
+
+
+/***/ }),
+
 /***/ "./lib/utils.js":
 /*!**********************!*\
   !*** ./lib/utils.js ***!
@@ -90,6 +130,223 @@ function cn() {
   }
   return (0,tailwind_merge__WEBPACK_IMPORTED_MODULE_1__.twMerge)((0,clsx__WEBPACK_IMPORTED_MODULE_0__.clsx)(inputs));
 }
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/Icon.js":
+/*!****************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/Icon.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Icon)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./defaultAttributes.js */ "./node_modules/lucide-react/dist/esm/defaultAttributes.js");
+/* harmony import */ var _shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/src/utils.js */ "./node_modules/lucide-react/dist/esm/shared/src/utils.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+var _excluded = ["color", "size", "strokeWidth", "absoluteStrokeWidth", "className", "children", "iconNode"];
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], t.indexOf(o) >= 0 || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.indexOf(n) >= 0) continue; t[n] = r[n]; } return t; }
+/**
+ * @license lucide-react v0.396.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+var Icon = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (_ref, ref) {
+  var _ref$color = _ref.color,
+    color = _ref$color === void 0 ? "currentColor" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size,
+    _ref$strokeWidth = _ref.strokeWidth,
+    strokeWidth = _ref$strokeWidth === void 0 ? 2 : _ref$strokeWidth,
+    absoluteStrokeWidth = _ref.absoluteStrokeWidth,
+    _ref$className = _ref.className,
+    className = _ref$className === void 0 ? "" : _ref$className,
+    children = _ref.children,
+    iconNode = _ref.iconNode,
+    rest = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", _objectSpread(_objectSpread({
+    ref: ref
+  }, _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__["default"]), {}, {
+    width: size,
+    height: size,
+    stroke: color,
+    strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+    className: (0,_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__.mergeClasses)("lucide", className)
+  }, rest), [].concat(_toConsumableArray(iconNode.map(function (_ref2) {
+    var _ref3 = _slicedToArray(_ref2, 2),
+      tag = _ref3[0],
+      attrs = _ref3[1];
+    return /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(tag, attrs);
+  })), _toConsumableArray(Array.isArray(children) ? children : [children])));
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/createLucideIcon.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/createLucideIcon.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ createLucideIcon)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/src/utils.js */ "./node_modules/lucide-react/dist/esm/shared/src/utils.js");
+/* harmony import */ var _Icon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Icon.js */ "./node_modules/lucide-react/dist/esm/Icon.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+var _excluded = ["className"];
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], t.indexOf(o) >= 0 || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (e.indexOf(n) >= 0) continue; t[n] = r[n]; } return t; }
+/**
+ * @license lucide-react v0.396.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+var createLucideIcon = function createLucideIcon(iconName, iconNode) {
+  var Component = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (_ref, ref) {
+    var className = _ref.className,
+      props = _objectWithoutProperties(_ref, _excluded);
+    return /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Icon_js__WEBPACK_IMPORTED_MODULE_1__["default"], _objectSpread({
+      ref: ref,
+      iconNode: iconNode,
+      className: (0,_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__.mergeClasses)("lucide-".concat((0,_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__.toKebabCase)(iconName)), className)
+    }, props));
+  });
+  Component.displayName = "".concat(iconName);
+  return Component;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/defaultAttributes.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/defaultAttributes.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ defaultAttributes)
+/* harmony export */ });
+/**
+ * @license lucide-react v0.396.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+var defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/check.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/check.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Check)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.396.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+var Check = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("Check", [["path", {
+  d: "M20 6 9 17l-5-5",
+  key: "1gmf2c"
+}]]);
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/shared/src/utils.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/shared/src/utils.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   mergeClasses: () => (/* binding */ mergeClasses),
+/* harmony export */   toKebabCase: () => (/* binding */ toKebabCase)
+/* harmony export */ });
+/**
+ * @license lucide-react v0.396.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+var toKebabCase = function toKebabCase(string) {
+  return string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+};
+var mergeClasses = function mergeClasses() {
+  for (var _len = arguments.length, classes = new Array(_len), _key = 0; _key < _len; _key++) {
+    classes[_key] = arguments[_key];
+  }
+  return classes.filter(function (className, index, array) {
+    return Boolean(className) && array.indexOf(className) === index;
+  }).join(" ");
+};
+
 
 /***/ }),
 
@@ -1271,6 +1528,16 @@ module.exports = window.React;
 
 /***/ }),
 
+/***/ "react-dom":
+/*!**********************************!*\
+  !*** external "window.ReactDOM" ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = window.ReactDOM;
+
+/***/ }),
+
 /***/ "reactR":
 /*!********************************!*\
   !*** external "window.reactR" ***!
@@ -1278,6 +1545,214 @@ module.exports = window.React;
 /***/ ((module) => {
 
 module.exports = window.reactR;
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/primitive/dist/index.mjs":
+/*!*********************************************************!*\
+  !*** ./node_modules/@radix-ui/primitive/dist/index.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   composeEventHandlers: () => (/* binding */ composeEventHandlers)
+/* harmony export */ });
+// packages/core/primitive/src/primitive.tsx
+function composeEventHandlers(originalEventHandler, ourEventHandler, { checkForDefaultPrevented = true } = {}) {
+  return function handleEvent(event) {
+    originalEventHandler?.(event);
+    if (checkForDefaultPrevented === false || !event.defaultPrevented) {
+      return ourEventHandler?.(event);
+    }
+  };
+}
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-checkbox/dist/index.mjs":
+/*!**************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-checkbox/dist/index.mjs ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Checkbox: () => (/* binding */ Checkbox),
+/* harmony export */   CheckboxIndicator: () => (/* binding */ CheckboxIndicator),
+/* harmony export */   Indicator: () => (/* binding */ Indicator),
+/* harmony export */   Root: () => (/* binding */ Root),
+/* harmony export */   createCheckboxScope: () => (/* binding */ createCheckboxScope)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var _radix_ui_react_compose_refs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @radix-ui/react-compose-refs */ "./node_modules/@radix-ui/react-compose-refs/dist/index.mjs");
+/* harmony import */ var _radix_ui_react_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @radix-ui/react-context */ "./node_modules/@radix-ui/react-context/dist/index.mjs");
+/* harmony import */ var _radix_ui_primitive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @radix-ui/primitive */ "./node_modules/@radix-ui/primitive/dist/index.mjs");
+/* harmony import */ var _radix_ui_react_use_controllable_state__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @radix-ui/react-use-controllable-state */ "./node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs");
+/* harmony import */ var _radix_ui_react_use_previous__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @radix-ui/react-use-previous */ "./node_modules/@radix-ui/react-use-previous/dist/index.mjs");
+/* harmony import */ var _radix_ui_react_use_size__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @radix-ui/react-use-size */ "./node_modules/@radix-ui/react-use-size/dist/index.mjs");
+/* harmony import */ var _radix_ui_react_presence__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @radix-ui/react-presence */ "./node_modules/@radix-ui/react-presence/dist/index.mjs");
+/* harmony import */ var _radix_ui_react_primitive__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @radix-ui/react-primitive */ "./node_modules/@radix-ui/react-primitive/dist/index.mjs");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+"use client";
+
+// packages/react/checkbox/src/Checkbox.tsx
+
+
+
+
+
+
+
+
+
+
+var CHECKBOX_NAME = "Checkbox";
+var [createCheckboxContext, createCheckboxScope] = (0,_radix_ui_react_context__WEBPACK_IMPORTED_MODULE_2__.createContextScope)(CHECKBOX_NAME);
+var [CheckboxProvider, useCheckboxContext] = createCheckboxContext(CHECKBOX_NAME);
+var Checkbox = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
+  (props, forwardedRef) => {
+    const {
+      __scopeCheckbox,
+      name,
+      checked: checkedProp,
+      defaultChecked,
+      required,
+      disabled,
+      value = "on",
+      onCheckedChange,
+      ...checkboxProps
+    } = props;
+    const [button, setButton] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+    const composedRefs = (0,_radix_ui_react_compose_refs__WEBPACK_IMPORTED_MODULE_3__.useComposedRefs)(forwardedRef, (node) => setButton(node));
+    const hasConsumerStoppedPropagationRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+    const isFormControl = button ? Boolean(button.closest("form")) : true;
+    const [checked = false, setChecked] = (0,_radix_ui_react_use_controllable_state__WEBPACK_IMPORTED_MODULE_4__.useControllableState)({
+      prop: checkedProp,
+      defaultProp: defaultChecked,
+      onChange: onCheckedChange
+    });
+    const initialCheckedStateRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(checked);
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+      const form = button?.form;
+      if (form) {
+        const reset = () => setChecked(initialCheckedStateRef.current);
+        form.addEventListener("reset", reset);
+        return () => form.removeEventListener("reset", reset);
+      }
+    }, [button, setChecked]);
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(CheckboxProvider, { scope: __scopeCheckbox, state: checked, disabled, children: [
+      /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(
+        _radix_ui_react_primitive__WEBPACK_IMPORTED_MODULE_5__.Primitive.button,
+        {
+          type: "button",
+          role: "checkbox",
+          "aria-checked": isIndeterminate(checked) ? "mixed" : checked,
+          "aria-required": required,
+          "data-state": getState(checked),
+          "data-disabled": disabled ? "" : void 0,
+          disabled,
+          value,
+          ...checkboxProps,
+          ref: composedRefs,
+          onKeyDown: (0,_radix_ui_primitive__WEBPACK_IMPORTED_MODULE_6__.composeEventHandlers)(props.onKeyDown, (event) => {
+            if (event.key === "Enter") event.preventDefault();
+          }),
+          onClick: (0,_radix_ui_primitive__WEBPACK_IMPORTED_MODULE_6__.composeEventHandlers)(props.onClick, (event) => {
+            setChecked((prevChecked) => isIndeterminate(prevChecked) ? true : !prevChecked);
+            if (isFormControl) {
+              hasConsumerStoppedPropagationRef.current = event.isPropagationStopped();
+              if (!hasConsumerStoppedPropagationRef.current) event.stopPropagation();
+            }
+          })
+        }
+      ),
+      isFormControl && /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(
+        BubbleInput,
+        {
+          control: button,
+          bubbles: !hasConsumerStoppedPropagationRef.current,
+          name,
+          value,
+          checked,
+          required,
+          disabled,
+          style: { transform: "translateX(-100%)" }
+        }
+      )
+    ] });
+  }
+);
+Checkbox.displayName = CHECKBOX_NAME;
+var INDICATOR_NAME = "CheckboxIndicator";
+var CheckboxIndicator = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeCheckbox, forceMount, ...indicatorProps } = props;
+    const context = useCheckboxContext(INDICATOR_NAME, __scopeCheckbox);
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_radix_ui_react_presence__WEBPACK_IMPORTED_MODULE_7__.Presence, { present: forceMount || isIndeterminate(context.state) || context.state === true, children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(
+      _radix_ui_react_primitive__WEBPACK_IMPORTED_MODULE_5__.Primitive.span,
+      {
+        "data-state": getState(context.state),
+        "data-disabled": context.disabled ? "" : void 0,
+        ...indicatorProps,
+        ref: forwardedRef,
+        style: { pointerEvents: "none", ...props.style }
+      }
+    ) });
+  }
+);
+CheckboxIndicator.displayName = INDICATOR_NAME;
+var BubbleInput = (props) => {
+  const { control, checked, bubbles = true, ...inputProps } = props;
+  const ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  const prevChecked = (0,_radix_ui_react_use_previous__WEBPACK_IMPORTED_MODULE_8__.usePrevious)(checked);
+  const controlSize = (0,_radix_ui_react_use_size__WEBPACK_IMPORTED_MODULE_9__.useSize)(control);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    const input = ref.current;
+    const inputProto = window.HTMLInputElement.prototype;
+    const descriptor = Object.getOwnPropertyDescriptor(inputProto, "checked");
+    const setChecked = descriptor.set;
+    if (prevChecked !== checked && setChecked) {
+      const event = new Event("click", { bubbles });
+      input.indeterminate = isIndeterminate(checked);
+      setChecked.call(input, isIndeterminate(checked) ? false : checked);
+      input.dispatchEvent(event);
+    }
+  }, [prevChecked, checked, bubbles]);
+  return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(
+    "input",
+    {
+      type: "checkbox",
+      "aria-hidden": true,
+      defaultChecked: isIndeterminate(checked) ? false : checked,
+      ...inputProps,
+      tabIndex: -1,
+      ref,
+      style: {
+        ...props.style,
+        ...controlSize,
+        position: "absolute",
+        pointerEvents: "none",
+        opacity: 0,
+        margin: 0
+      }
+    }
+  );
+};
+function isIndeterminate(checked) {
+  return checked === "indeterminate";
+}
+function getState(checked) {
+  return isIndeterminate(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
+}
+var Root = Checkbox;
+var Indicator = CheckboxIndicator;
+
+//# sourceMappingURL=index.mjs.map
+
 
 /***/ }),
 
@@ -1308,6 +1783,304 @@ function composeRefs(...refs) {
 function useComposedRefs(...refs) {
   return react__WEBPACK_IMPORTED_MODULE_0__.useCallback(composeRefs(...refs), refs);
 }
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-context/dist/index.mjs":
+/*!*************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-context/dist/index.mjs ***!
+  \*************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createContext: () => (/* binding */ createContext2),
+/* harmony export */   createContextScope: () => (/* binding */ createContextScope)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// packages/react/context/src/createContext.tsx
+
+
+function createContext2(rootComponentName, defaultContext) {
+  const Context = react__WEBPACK_IMPORTED_MODULE_0__.createContext(defaultContext);
+  function Provider(props) {
+    const { children, ...context } = props;
+    const value = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => context, Object.values(context));
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Context.Provider, { value, children });
+  }
+  function useContext2(consumerName) {
+    const context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(Context);
+    if (context) return context;
+    if (defaultContext !== void 0) return defaultContext;
+    throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
+  }
+  Provider.displayName = rootComponentName + "Provider";
+  return [Provider, useContext2];
+}
+function createContextScope(scopeName, createContextScopeDeps = []) {
+  let defaultContexts = [];
+  function createContext3(rootComponentName, defaultContext) {
+    const BaseContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(defaultContext);
+    const index = defaultContexts.length;
+    defaultContexts = [...defaultContexts, defaultContext];
+    function Provider(props) {
+      const { scope, children, ...context } = props;
+      const Context = scope?.[scopeName][index] || BaseContext;
+      const value = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => context, Object.values(context));
+      return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Context.Provider, { value, children });
+    }
+    function useContext2(consumerName, scope) {
+      const Context = scope?.[scopeName][index] || BaseContext;
+      const context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(Context);
+      if (context) return context;
+      if (defaultContext !== void 0) return defaultContext;
+      throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
+    }
+    Provider.displayName = rootComponentName + "Provider";
+    return [Provider, useContext2];
+  }
+  const createScope = () => {
+    const scopeContexts = defaultContexts.map((defaultContext) => {
+      return react__WEBPACK_IMPORTED_MODULE_0__.createContext(defaultContext);
+    });
+    return function useScope(scope) {
+      const contexts = scope?.[scopeName] || scopeContexts;
+      return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+        () => ({ [`__scope${scopeName}`]: { ...scope, [scopeName]: contexts } }),
+        [scope, contexts]
+      );
+    };
+  };
+  createScope.scopeName = scopeName;
+  return [createContext3, composeContextScopes(createScope, ...createContextScopeDeps)];
+}
+function composeContextScopes(...scopes) {
+  const baseScope = scopes[0];
+  if (scopes.length === 1) return baseScope;
+  const createScope = () => {
+    const scopeHooks = scopes.map((createScope2) => ({
+      useScope: createScope2(),
+      scopeName: createScope2.scopeName
+    }));
+    return function useComposedScopes(overrideScopes) {
+      const nextScopes = scopeHooks.reduce((nextScopes2, { useScope, scopeName }) => {
+        const scopeProps = useScope(overrideScopes);
+        const currentScope = scopeProps[`__scope${scopeName}`];
+        return { ...nextScopes2, ...currentScope };
+      }, {});
+      return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => ({ [`__scope${baseScope.scopeName}`]: nextScopes }), [nextScopes]);
+    };
+  };
+  createScope.scopeName = baseScope.scopeName;
+  return createScope;
+}
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-presence/dist/index.mjs":
+/*!**************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-presence/dist/index.mjs ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Presence: () => (/* binding */ Presence)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "react-dom");
+/* harmony import */ var _radix_ui_react_compose_refs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @radix-ui/react-compose-refs */ "./node_modules/@radix-ui/react-compose-refs/dist/index.mjs");
+/* harmony import */ var _radix_ui_react_use_layout_effect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @radix-ui/react-use-layout-effect */ "./node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs");
+"use client";
+
+// packages/react/presence/src/Presence.tsx
+
+
+
+
+
+// packages/react/presence/src/useStateMachine.tsx
+
+function useStateMachine(initialState, machine) {
+  return react__WEBPACK_IMPORTED_MODULE_0__.useReducer((state, event) => {
+    const nextState = machine[state][event];
+    return nextState ?? state;
+  }, initialState);
+}
+
+// packages/react/presence/src/Presence.tsx
+var Presence = (props) => {
+  const { present, children } = props;
+  const presence = usePresence(present);
+  const child = typeof children === "function" ? children({ present: presence.isPresent }) : react__WEBPACK_IMPORTED_MODULE_0__.Children.only(children);
+  const ref = (0,_radix_ui_react_compose_refs__WEBPACK_IMPORTED_MODULE_2__.useComposedRefs)(presence.ref, getElementRef(child));
+  const forceMount = typeof children === "function";
+  return forceMount || presence.isPresent ? react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(child, { ref }) : null;
+};
+Presence.displayName = "Presence";
+function usePresence(present) {
+  const [node, setNode] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
+  const stylesRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef({});
+  const prevPresentRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(present);
+  const prevAnimationNameRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef("none");
+  const initialState = present ? "mounted" : "unmounted";
+  const [state, send] = useStateMachine(initialState, {
+    mounted: {
+      UNMOUNT: "unmounted",
+      ANIMATION_OUT: "unmountSuspended"
+    },
+    unmountSuspended: {
+      MOUNT: "mounted",
+      ANIMATION_END: "unmounted"
+    },
+    unmounted: {
+      MOUNT: "mounted"
+    }
+  });
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    const currentAnimationName = getAnimationName(stylesRef.current);
+    prevAnimationNameRef.current = state === "mounted" ? currentAnimationName : "none";
+  }, [state]);
+  (0,_radix_ui_react_use_layout_effect__WEBPACK_IMPORTED_MODULE_3__.useLayoutEffect)(() => {
+    const styles = stylesRef.current;
+    const wasPresent = prevPresentRef.current;
+    const hasPresentChanged = wasPresent !== present;
+    if (hasPresentChanged) {
+      const prevAnimationName = prevAnimationNameRef.current;
+      const currentAnimationName = getAnimationName(styles);
+      if (present) {
+        send("MOUNT");
+      } else if (currentAnimationName === "none" || styles?.display === "none") {
+        send("UNMOUNT");
+      } else {
+        const isAnimating = prevAnimationName !== currentAnimationName;
+        if (wasPresent && isAnimating) {
+          send("ANIMATION_OUT");
+        } else {
+          send("UNMOUNT");
+        }
+      }
+      prevPresentRef.current = present;
+    }
+  }, [present, send]);
+  (0,_radix_ui_react_use_layout_effect__WEBPACK_IMPORTED_MODULE_3__.useLayoutEffect)(() => {
+    if (node) {
+      const handleAnimationEnd = (event) => {
+        const currentAnimationName = getAnimationName(stylesRef.current);
+        const isCurrentAnimation = currentAnimationName.includes(event.animationName);
+        if (event.target === node && isCurrentAnimation) {
+          react_dom__WEBPACK_IMPORTED_MODULE_1__.flushSync(() => send("ANIMATION_END"));
+        }
+      };
+      const handleAnimationStart = (event) => {
+        if (event.target === node) {
+          prevAnimationNameRef.current = getAnimationName(stylesRef.current);
+        }
+      };
+      node.addEventListener("animationstart", handleAnimationStart);
+      node.addEventListener("animationcancel", handleAnimationEnd);
+      node.addEventListener("animationend", handleAnimationEnd);
+      return () => {
+        node.removeEventListener("animationstart", handleAnimationStart);
+        node.removeEventListener("animationcancel", handleAnimationEnd);
+        node.removeEventListener("animationend", handleAnimationEnd);
+      };
+    } else {
+      send("ANIMATION_END");
+    }
+  }, [node, send]);
+  return {
+    isPresent: ["mounted", "unmountSuspended"].includes(state),
+    ref: react__WEBPACK_IMPORTED_MODULE_0__.useCallback((node2) => {
+      if (node2) stylesRef.current = getComputedStyle(node2);
+      setNode(node2);
+    }, [])
+  };
+}
+function getAnimationName(styles) {
+  return styles?.animationName || "none";
+}
+function getElementRef(element) {
+  let getter = Object.getOwnPropertyDescriptor(element.props, "ref")?.get;
+  let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element.ref;
+  }
+  getter = Object.getOwnPropertyDescriptor(element, "ref")?.get;
+  mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element.props.ref;
+  }
+  return element.props.ref || element.ref;
+}
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-primitive/dist/index.mjs":
+/*!***************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-primitive/dist/index.mjs ***!
+  \***************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Primitive: () => (/* binding */ Primitive),
+/* harmony export */   Root: () => (/* binding */ Root),
+/* harmony export */   dispatchDiscreteCustomEvent: () => (/* binding */ dispatchDiscreteCustomEvent)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "react-dom");
+/* harmony import */ var _radix_ui_react_slot__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @radix-ui/react-slot */ "./node_modules/@radix-ui/react-slot/dist/index.mjs");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// packages/react/primitive/src/Primitive.tsx
+
+
+
+
+var NODES = [
+  "a",
+  "button",
+  "div",
+  "form",
+  "h2",
+  "h3",
+  "img",
+  "input",
+  "label",
+  "li",
+  "nav",
+  "ol",
+  "p",
+  "span",
+  "svg",
+  "ul"
+];
+var Primitive = NODES.reduce((primitive, node) => {
+  const Node = react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((props, forwardedRef) => {
+    const { asChild, ...primitiveProps } = props;
+    const Comp = asChild ? _radix_ui_react_slot__WEBPACK_IMPORTED_MODULE_3__.Slot : node;
+    if (typeof window !== "undefined") {
+      window[Symbol.for("radix-ui")] = true;
+    }
+    return /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Comp, { ...primitiveProps, ref: forwardedRef });
+  });
+  Node.displayName = `Primitive.${node}`;
+  return { ...primitive, [node]: Node };
+}, {});
+function dispatchDiscreteCustomEvent(target, event) {
+  if (target) react_dom__WEBPACK_IMPORTED_MODULE_1__.flushSync(() => target.dispatchEvent(event));
+}
+var Root = Primitive;
 
 //# sourceMappingURL=index.mjs.map
 
@@ -1408,6 +2181,198 @@ function getElementRef(element) {
   return element.props.ref || element.ref;
 }
 var Root = Slot;
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useCallbackRef: () => (/* binding */ useCallbackRef)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+// packages/react/use-callback-ref/src/useCallbackRef.tsx
+
+function useCallbackRef(callback) {
+  const callbackRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(callback);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    callbackRef.current = callback;
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => (...args) => callbackRef.current?.(...args), []);
+}
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useControllableState: () => (/* binding */ useControllableState)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var _radix_ui_react_use_callback_ref__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @radix-ui/react-use-callback-ref */ "./node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs");
+// packages/react/use-controllable-state/src/useControllableState.tsx
+
+
+function useControllableState({
+  prop,
+  defaultProp,
+  onChange = () => {
+  }
+}) {
+  const [uncontrolledProp, setUncontrolledProp] = useUncontrolledState({ defaultProp, onChange });
+  const isControlled = prop !== void 0;
+  const value = isControlled ? prop : uncontrolledProp;
+  const handleChange = (0,_radix_ui_react_use_callback_ref__WEBPACK_IMPORTED_MODULE_1__.useCallbackRef)(onChange);
+  const setValue = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(
+    (nextValue) => {
+      if (isControlled) {
+        const setter = nextValue;
+        const value2 = typeof nextValue === "function" ? setter(prop) : nextValue;
+        if (value2 !== prop) handleChange(value2);
+      } else {
+        setUncontrolledProp(nextValue);
+      }
+    },
+    [isControlled, prop, setUncontrolledProp, handleChange]
+  );
+  return [value, setValue];
+}
+function useUncontrolledState({
+  defaultProp,
+  onChange
+}) {
+  const uncontrolledState = react__WEBPACK_IMPORTED_MODULE_0__.useState(defaultProp);
+  const [value] = uncontrolledState;
+  const prevValueRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(value);
+  const handleChange = (0,_radix_ui_react_use_callback_ref__WEBPACK_IMPORTED_MODULE_1__.useCallbackRef)(onChange);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (prevValueRef.current !== value) {
+      handleChange(value);
+      prevValueRef.current = value;
+    }
+  }, [value, prevValueRef, handleChange]);
+  return uncontrolledState;
+}
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useLayoutEffect: () => (/* binding */ useLayoutEffect2)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+// packages/react/use-layout-effect/src/useLayoutEffect.tsx
+
+var useLayoutEffect2 = Boolean(globalThis?.document) ? react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect : () => {
+};
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-use-previous/dist/index.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-use-previous/dist/index.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   usePrevious: () => (/* binding */ usePrevious)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+// packages/react/use-previous/src/usePrevious.tsx
+
+function usePrevious(value) {
+  const ref = react__WEBPACK_IMPORTED_MODULE_0__.useRef({ value, previous: value });
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    if (ref.current.value !== value) {
+      ref.current.previous = ref.current.value;
+      ref.current.value = value;
+    }
+    return ref.current.previous;
+  }, [value]);
+}
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@radix-ui/react-use-size/dist/index.mjs":
+/*!**************************************************************!*\
+  !*** ./node_modules/@radix-ui/react-use-size/dist/index.mjs ***!
+  \**************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useSize: () => (/* binding */ useSize)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var _radix_ui_react_use_layout_effect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @radix-ui/react-use-layout-effect */ "./node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs");
+// packages/react/use-size/src/useSize.tsx
+
+
+function useSize(element) {
+  const [size, setSize] = react__WEBPACK_IMPORTED_MODULE_0__.useState(void 0);
+  (0,_radix_ui_react_use_layout_effect__WEBPACK_IMPORTED_MODULE_1__.useLayoutEffect)(() => {
+    if (element) {
+      setSize({ width: element.offsetWidth, height: element.offsetHeight });
+      const resizeObserver = new ResizeObserver((entries) => {
+        if (!Array.isArray(entries)) {
+          return;
+        }
+        if (!entries.length) {
+          return;
+        }
+        const entry = entries[0];
+        let width;
+        let height;
+        if ("borderBoxSize" in entry) {
+          const borderSizeEntry = entry["borderBoxSize"];
+          const borderSize = Array.isArray(borderSizeEntry) ? borderSizeEntry[0] : borderSizeEntry;
+          width = borderSize["inlineSize"];
+          height = borderSize["blockSize"];
+        } else {
+          width = element.offsetWidth;
+          height = element.offsetHeight;
+        }
+        setSize({ width, height });
+      });
+      resizeObserver.observe(element, { box: "border-box" });
+      return () => resizeObserver.unobserve(element);
+    } else {
+      setSize(void 0);
+    }
+  }, [element]);
+  return size;
+}
 
 //# sourceMappingURL=index.mjs.map
 
@@ -4178,6 +5143,9 @@ const twMerge = /*#__PURE__*/createTailwindMerge(getDefaultConfig);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+var __webpack_exports__ = {};
 /*!*********************************!*\
   !*** ./srcjs/action_button.jsx ***!
   \*********************************/
@@ -4199,6 +5167,45 @@ function ActionButton(_ref) {
   }, configuration.label);
 }
 (0,reactR__WEBPACK_IMPORTED_MODULE_0__.reactShinyInput)(".action_button", "shiny.shadcn.action_button", ActionButton);
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+(() => {
+/*!****************************!*\
+  !*** ./srcjs/checkbox.jsx ***!
+  \****************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_ui_checkbox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/components/ui/checkbox */ "./components/ui/checkbox.jsx");
+/* harmony import */ var reactR__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactR */ "reactR");
+/* harmony import */ var reactR__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactR__WEBPACK_IMPORTED_MODULE_1__);
+
+function CheckboxInput(_ref) {
+  var configuration = _ref.configuration,
+    value = _ref.value,
+    setValue = _ref.setValue;
+  return /*#__PURE__*/React.createElement("div", {
+    className: "flex space-x-2 items-top"
+  }, /*#__PURE__*/React.createElement(_components_ui_checkbox__WEBPACK_IMPORTED_MODULE_0__.Checkbox, {
+    checked: value,
+    onCheckedChange: function onCheckedChange() {
+      return setValue(!value);
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "grid gap-1.5 leading-none"
+  }, /*#__PURE__*/React.createElement("label", {
+    htmlFor: configuration.id,
+    className: "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+  }, configuration.label), /*#__PURE__*/React.createElement("p", {
+    className: "text-sm text-muted-foreground"
+  }, configuration.description)));
+}
+
+// export { CheckboxInput };
+
+
+(0,reactR__WEBPACK_IMPORTED_MODULE_1__.reactShinyInput)(".checkbox", "shiny.shadcn.checkbox", CheckboxInput);
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=shadcn_bundle.js.map

@@ -6,7 +6,7 @@
 #' @importFrom htmltools htmlDependency tags
 #'
 #' @export
-checkboxInput <- function(inputId, default = FALSE, label = NULL) {
+checkboxInput <- function(inputId, default = FALSE, label = NULL, description = NULL) {
   reactR::createReactShinyInput(
     inputId,
     "checkbox",
@@ -19,7 +19,9 @@ checkboxInput <- function(inputId, default = FALSE, label = NULL) {
     ),
     default,
     configuration = list(
-      label = label
+      label = label,
+      id = inputId,
+      description = description
     ),
     htmltools::tags$div
   )

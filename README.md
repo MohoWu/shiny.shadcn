@@ -47,6 +47,10 @@ shinyApp(ui, server)
 
 For full documentation, visit [our documentation site](https://mohowu.github.io/shiny.shadcn).
 
+## Currently Supported Components
+- [x] Button
+- [x] Checkbox
+
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
@@ -62,12 +66,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/)
 - [reactR](https://github.com/react-R/reactR)
 
+
+
 ## TODO
 
 - [ ] Set up Vite as a testing ground for shadcn component
 - [ ] Test if debugger works in React component
-- [ ] Add checkbox component
-- [ ] Add date picker component
+- [ ] Better Usage examples
 
 ## Contact
 

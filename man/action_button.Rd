@@ -2,14 +2,17 @@
 % Please edit documentation in R/action_button.R
 \name{action_button}
 \alias{action_button}
-\title{\if{html}{\out{
-<Add Title>
-}}}
+\title{Button}
 \usage{
-action_button(inputId, label = NULL)
+action_button(inputId, label = NULL, variant = "default")
+}
+\arguments{
+\item{inputId}{input id}
+
+\item{label}{button label}
+
+\item{variant}{one of "default", "secondary", "destructive", "outline", "ghost", "link"}
 }
 \description{
-\if{html}{\out{
-<Add Description>
-}}
+Button
 }

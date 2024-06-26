@@ -1,7 +1,10 @@
 var path = require("path");
 
 module.exports = {
-  entry: [path.join(__dirname, "srcjs", "action_button.jsx")],
+  entry: [
+    path.join(__dirname, "srcjs", "action_button.jsx"),
+    path.join(__dirname, "srcjs", "checkbox.jsx"),
+  ],
   output: {
     path: path.join(__dirname, "inst/www/shiny.shadcn"),
     filename: "shadcn_bundle.js"
