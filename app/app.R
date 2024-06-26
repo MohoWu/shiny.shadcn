@@ -11,6 +11,7 @@ server <- function(input, output, session) {
   observeEvent(input$btn, {
     print(input$btn)
   })
+
 }
 
 shinyApp(ui, server)

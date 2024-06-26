@@ -20,11 +20,11 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
-      {
-        test: /\.mjs$/,
-        include: /node_modules/,
-        type: "javascript/auto",
-      }
+      // {
+      //   test: /\.mjs$/,
+      //   include: /node_modules/,
+      //   type: "javascript/auto",
+      // }
     ]
   },
   externals: {
@@ -40,5 +40,11 @@ module.exports = {
     alias: {"@": path.resolve(__dirname, "")},
     extensions: ["*", ".mjs", ".js", ".json", ".jsx"],
   },
-  mode: 'production'
+  mode: 'production',
+  // for reactR to detect webpack
+  // plugins: [
+  //   new webpack.DefinePlugin({
+  //     'process.env.WEBPACK': JSON.stringify(true),
+  //   }),
+  // ]
 };
