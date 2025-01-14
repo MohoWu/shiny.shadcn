@@ -1,6 +1,6 @@
 # shiny.shadcn
 
-An R package that ports the [shadcn UI](https://ui.shadcn.com/) library to R Shiny, bringing beautiful, customizable, and accessible UI components to your Shiny applications.
+This is a proof of concept that modern JavaScript UI libraries like [shadcn UI](https://ui.shadcn.com/) can be ported to the R Shiny framework, bringing beautiful, customizable, and accessible UI components to your Shiny applications.
 
 ## Overview
 
@@ -27,37 +27,14 @@ devtools::install_github("mohowu/shiny.shadcn")
 Here's a basic example of how to use a shiny.shadcn component in your Shiny app:
 
 ```R
-library(shiny)
-library(shiny.shadcn)
-
-ui <- fluidPage(
-  shadcnButton("click", "Click me!")
-)
-
-server <- function(input, output) {
-  observeEvent(input$click, {
-    print("Button clicked!")
-  })
-}
-
-shinyApp(ui, server)
+shiny::runApp(appDir = system.file("app", package = "shiny.shadcn"))
 ```
 
-## Documentation
-
-For full documentation, visit [our documentation site](https://mohowu.github.io/shiny.shadcn).
 
 ## Currently Supported Components
 - [x] Button
 - [x] Checkbox
 
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
@@ -67,13 +44,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [reactR](https://github.com/react-R/reactR)
 
 
-
 ## TODO
 
 - [ ] Set up Vite as a testing ground for shadcn component
 - [ ] Test if debugger works in React component
 - [ ] Better Usage examples
 
-## Contact
-
-If you have any questions or feedback, please open an issue on our [GitHub repository](https://github.com/mohowu/shiny.shadcn/issues).
