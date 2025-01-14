@@ -2,14 +2,10 @@
 % Please edit documentation in R/action_button.R
 \name{updateAction_button}
 \alias{updateAction_button}
-\title{\if{html}{\out{
-<Add Title>
-}}}
+\title{Update action button}
 \usage{
 updateAction_button(session, inputId, value, configuration = NULL)
 }
 \description{
-\if{html}{\out{
-<Add Description>
-}}
+Update an action button with a new value
 }

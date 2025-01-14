@@ -2,14 +2,10 @@
 % Please edit documentation in R/checkbox.R
 \name{checkboxInput}
 \alias{checkboxInput}
-\title{\if{html}{\out{
-<Add Title>
-}}}
+\title{Checkbox input}
 \usage{
-checkboxInput(inputId, default = FALSE, label = NULL)
+checkboxInput(inputId, default = FALSE, label = NULL, description = NULL)
 }
 \description{
-\if{html}{\out{
-<Add Description>
-}}
+A simple checkbox input
 }

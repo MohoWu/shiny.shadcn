@@ -1,6 +1,6 @@
-#' <Add Title>
+#' Checkbox input
 #'
-#' <Add Description>
+#' A simple checkbox input
 #'
 #' @importFrom reactR createReactShinyInput
 #' @importFrom htmltools htmlDependency tags
@@ -27,9 +27,9 @@ checkboxInput <- function(inputId, default = FALSE, label = NULL, description = 
   )
 }
 
-#' <Add Title>
+#' Update a checkbox input
 #'
-#' <Add Description>
+#' Update a checkbox input with a new value
 #'
 #' @export
 updateCheckboxInput <- function(session, inputId, value, configuration = NULL) {

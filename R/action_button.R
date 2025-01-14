@@ -28,9 +28,9 @@ action_button <- function(inputId, label = NULL, variant = "default") {
   )
 }
 
-#' <Add Title>
+#' Update action button
 #'
-#' <Add Description>
+#' Update an action button with a new value
 #'
 #' @export
 updateAction_button <- function(session, inputId, value, configuration = NULL) {

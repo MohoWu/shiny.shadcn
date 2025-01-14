@@ -2,14 +2,10 @@
 % Please edit documentation in R/checkbox.R
 \name{updateCheckboxInput}
 \alias{updateCheckboxInput}
-\title{\if{html}{\out{
-<Add Title>
-}}}
+\title{Update a checkbox input}
 \usage{
 updateCheckboxInput(session, inputId, value, configuration = NULL)
 }
 \description{
-\if{html}{\out{
-<Add Description>
-}}
+Update a checkbox input with a new value
 }
